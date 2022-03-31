@@ -1,0 +1,270 @@
+body {
+  font-family: 'Alata', sans-serif;
+}
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1;
+  font-size: 3em;
+}
+h6{
+  opacity: 0.5;
+}
+p {
+  text-align: justify;
+  opacity: 0.5;
+  margin-top: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /*remove extra space di sebelah kanan*/
+}
+
+/*------------------------------------------------HEADER SECTION-------------------------------------------------*/
+#header {
+  background-image: url("images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.white-text {
+  color: white;
+}
+.big-heading {
+  font-size: 4.5rem;
+}
+.container-fluid {
+  padding: 3% 10% 7%;
+}
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.navbar-toggler{
+  margin-right: 5px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.nav-item {
+  padding: 0 10px;
+}
+.border-text {
+  border: 2px solid;
+  margin: 0 47% 8% 10%;
+  text-align: left;
+  padding: 2% 5% 1% 2%;
+}
+
+/*---------------------------------------------ABOUT SECTION----------====--------------------------------*/
+#about {
+  margin: 7% 10%;
+  text-align: left;
+}
+.belakang {
+  width: 60%;
+}
+.depan {
+  width: 50%;
+  position: relative;
+  margin-top: -30%;
+  margin-left: 50%;
+  z-index: 1;
+  padding: 8%;
+  background-color: white;
+}
+
+/*-------------------------=====------------OUR CREATION SECTION---------======------------------------------*/
+#ourCreation {
+  margin: 12% 10%;
+  text-align: left;
+  margin-top: 0;
+}
+.baris-creations{
+  margin-bottom: 30px;
+}
+.judul-creations{
+  margin-left: 0;
+}
+.seAllbutton {
+  width: 15%;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  border: 2px solid;
+  margin-left: 33%;
+  letter-spacing: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+.creations-col{
+  font-family: 'Josefin Sans', sans-serif;
+  flex-basis: 25%;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  color: white;
+  font-size: 4em;
+}
+.creations-col img{
+  width: 100%;
+  filter: brightness(90%); /*untuk menggelapkan gambar*/
+}
+.bottom-left{
+  position: absolute;
+  bottom: 6%;
+  width: 100%;
+  left: 17%;
+}
+.layer{
+  background: transparent;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.layer:hover{
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+/*------------------------------------------------ FOOTER SECTION -----------------------------------------------------*/
+#footer {
+  background-color: black;
+  padding: 2% 10%;
+}
+.footer-brand1, .footer-brand2 {
+  height: 50%;
+}
+.footer-brand1{
+  margin-bottom: 22px;
+}
+.footer-brand2{
+  margin-top: 25px;
+}
+.footer-left, .footer-right{
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.footer-right{
+  text-align: right;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+}
+.flex-footer-links{
+  text-decoration: none;
+  color: inherit;
+  width: 15%;
+}
+.icon-footer {
+  color: white;
+  padding-right: 20px;
+}
+.flex-footer-links:hover, .icon-footer:hover{
+  color: #8946A6;
+}
+.attribution{
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+
+/*------------------------------------------- RESPONSIVE WEBSITE ---------------------------------------------------*/
+@media (max-width:1028px) {
+  .big-heading {
+    font-size: 3.5rem;
+  }
+  .border-text {
+    margin: 30px;
+    padding: 4% 4% 2%;
+  }
+  #about{
+    margin: 7% 10%;
+    text-align: center;
+  }
+  .belakang{
+    width: 100%;
+  }
+  .depan {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .judul-about {
+    font-size: 2em;
+  }
+  #ourCreation {
+    margin: 7% 3%;
+  }
+  .baris-creations{
+    text-align: center;
+  }
+  .seAllbutton {
+    width: 40%;
+  }
+  .creations-col{ 
+    margin-bottom: 15px;
+    flex-basis: 100%;
+    font-size: 2em;
+  }
+  .bottom-left{
+    left: 8%;
+  }
+  #footer {
+    padding: 10%;
+  }
+  .footer-brand1, .footer-brand2{
+    height: 35px;
+    margin-bottom: 40px;
+  }
+  .flex-footer-links{
+    width: 100%;
+    margin: 10px 0;
+  }
+  .footer-left, .footer-right{
+    width: 100%;
+    text-align: center;
+  }
+  .footer-right{
+    margin-top: 50px;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .attribution{
+    padding-top: 0;
+  }
+  /*@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }*/
+/*@media (min-width:1029px) and (max-width:1204){
+  .judul-about {
+    font-size: 2.5em;
+  }
+  .depan{
+    width: 70%;
+  }
+}*/
+/*@media (max-width:1204px) { /*1024*850
+  #about{
+    text-align: center;
+  }
+  .depan {
+    width: 60%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}*/
